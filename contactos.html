@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+
+</head>
+<body>
+    
+    <h2>Página de contactos</h2>
+    <a href="index.html"> Principal</a>
+ 
+    <center>
+        <table border="2">
+            <tr>
+                <th><h1><a href="Inicio.html">Inicio</a></h1></th>
+                <th><h1><a href="nosotros.html">Nosotros</a></h1></th>
+                <th><h1><a href="servicios.html">Servicios</a></h1></th>
+                <th><h1><a href="registros.html">Registros</a></h1></th>
+                <th><h1><a href="contactos.html">Contactos</a></h1></th>
+            </tr>
+        </table>
+        </center>
+        
+        <form class="FormDatos" action="resultado.html" method="post" id="Formulario" >
+            <br><h2 class="Titulo">Pagina  De  Contacto</h2></br>
+            
+            <label for="nom">Nombre: </label>
+            <input class="inputs"  type="text" name="nom" id="nom">
+            <label class="input"for="correo">Correo Electronico</label>
+            <input class="inputs" type="email" name="correo"  id="correo">
+            <label for="Telefono">Telefono</label>
+            <input class="inputs" type="tel"  maxlength="10" pattern="[0-9]{3} [0-9]{10}" name="Telefono"  id="Telefono" placeholder="Telefono">
+            <label for="Mensaje">Mesaje</label>
+            <textarea class="inputs" name="Mensaje" id="Mensaje" cols="50" rows="5"></textarea>
+
+            <input class="Subir" type="submit" value="Subir">
+        </form>
+
+</body>
+</html>
